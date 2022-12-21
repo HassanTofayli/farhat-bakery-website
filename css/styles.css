@@ -1,0 +1,165 @@
+
+body{
+    background-image: url("../images/testing/bg_seed.png");
+   background-repeat: repeat;
+
+} 
+@font-face {
+    font-family: exo-extra-thin;
+    src: url(font/Exo-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: exo-thin;
+    src: url(font/Exo-Thin.ttf);
+}
+
+@media screen and (min-width: 575px) {
+    .bg-light {
+        background-color: transparent !important;
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+
+.navbar-nav {
+    padding-top: 15px;
+}
+
+.main-logo {}
+
+@media screen and (max-width: 575px) {
+
+    .main-logo {
+        width: 30px;
+    }
+
+    .main-bg {
+        top: 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .navbar {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0;
+    }
+
+    .navbar-toggler-icon {
+        width: 0.5em;
+        height: 0.5em;
+    }
+
+    .navbar-toggler {
+        padding: 0 5px;
+    }
+
+    .main-logo {
+        width: 20px;
+    }
+}
+
+
+/* //////// CAROUSEL /////////// */
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    height:45vw;
+    margin: 0 auto;
+}
+
+.carousel_image{
+    width: 100%;
+}
+
+.carousel_track-container{
+    position: relative;
+    height: 100%;
+}
+.carousel_track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.carousel_slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+}
+
+.carousel_button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+}
+.carousel_button img{
+    width: 12px;
+}
+.carousel_button_left{
+    left: -25px;
+}
+.carousel_button_right{
+    right: -25px;
+}
+
+.carousel_nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicator{
+    border: 0;
+    background: transparent;
+}
+.carousel_nav_img{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer_sections{
+    display: flex;
+}
+.footer_first_section{
+    margin-left: 20px;
+}
+.footer_contact_us{
+
+}
+
+.footer_end_spacing{    
+    background-color: #09318C;
+    display: flex;
+    justify-content: center;
+}
+.footer_logo{
+    width: 170px;
+    padding: 10px;
+}
