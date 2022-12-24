@@ -30,9 +30,12 @@ const moveToSlide = (currentSlide, targetSlide) => {
     console.log(indexTarget);
     console.log(indexPrev);
     console.log(dotsNav.children.item(indexPrev).children.item(0).src);
-    dotsNav.children.item(indexPrev).children.item(0).src = 'images/testing/carousel/carousel_dot.png';
-    dotsNav.children.item(indexTarget).children.item(0).src = 'images/testing/carousel/carousel_dot_active.png';
-    //  = images/testing/carousel/carousel_dot_active.png;
+    const prevNavBtn = dotsNav.children.item(indexPrev).children.item(0);
+    const targetNavBtn = dotsNav.children.item(indexTarget).children.item(0);
+    prevNavBtn.src = 'images/testing/carousel/carousel_dot.png';
+    targetNavBtn.src = 'images/testing/carousel/carousel_dot_active.png';
+    prevNavBtn.classList.remove('indicator_active_img');
+    targetNavBtn.classList.add('indicator_active_img');
 };
 //next slide
 nextButton.addEventListener('click', e => {

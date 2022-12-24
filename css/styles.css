@@ -86,14 +86,14 @@ body{
     width: 100%;
     object-fit:conain;
     scale: .5;
-    border: 5px solid #C4912C;
-    border-radius: 30px;
+    border: 0.5vw solid #C4912C;
+    border-radius: 2.6vw;
     transition-property: scale;
     transition-duration: .25s;
 }
 .current_slide img{
     scale: 1;
-    border: 5px solid #09318C;
+    border: 0.5vw solid #09318C;
     transition-property: scale;
     transition-duration: .25s;
 }
@@ -150,7 +150,10 @@ body{
     background: transparent;
 }
 .carousel_nav_img{
-    width: 50%;
+    width: 3vw;
+}
+.indicator_active_img{
+    width: 4vw;
 }
 
 
