@@ -74,7 +74,7 @@ body{
 
 /* //////// CAROUSEL /////////// */
 .carousel{
-    margin: 300px 0 30px;
+    margin: 300px 0;
 }
 .carousel-container {
     position: relative;
@@ -88,10 +88,14 @@ body{
     scale: .5;
     border: 5px solid #C4912C;
     border-radius: 30px;
+    transition-property: scale;
+    transition-duration: .25s;
 }
 .current_slide img{
     scale: 1;
     border: 5px solid #09318C;
+    transition-property: scale;
+    transition-duration: .25s;
 }
 .carousel_track-container{
     position: relative;
@@ -123,7 +127,8 @@ body{
     border: 0;
 }
 .carousel_button img{
-    width: 12px;
+    width: 120px;
+    opacity: 0;
 }
 .carousel_button_left{
     left: 25px;
@@ -164,6 +169,7 @@ body{
 /* Footer */
 footer{
     font-size: .7rem;
+    color: #C4912C;
 }
 .footer_contact_us{
     margin-left: 20px;
@@ -173,11 +179,10 @@ footer{
     color: #C4912C ;
 }
 .footer_sections{
-    display: block;
-    
+    display: flex;
+    gap: 20%;
 }
 .footer_first_section{
-    display: inline-block;
     width: 160px;
     margin-left: 20px;
 }
@@ -197,7 +202,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    color: #C4912C;
 }
 
 .footer_email{
