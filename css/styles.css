@@ -1,6 +1,8 @@
 
+
+
 body{
-    background-image: url("../images/testing/bg_seed.png");
+    background-image: url("../images/testing/bg_seed_op5.png");
    background-repeat: repeat;
 
 } 
@@ -71,32 +73,46 @@ body{
 
 
 /* //////// CAROUSEL /////////// */
-
+.carousel{
+    margin: 300px 0 30px;
+}
 .carousel-container {
     position: relative;
-    width: 80%;
-    height:45vw;
+    width: 100%;
+    height:22vw;
     margin: 0 auto;
 }
-
 .carousel_image{
     width: 100%;
+    object-fit:conain;
+    scale: .5;
+    border: 5px solid #C4912C;
+    border-radius: 30px;
 }
-
+.current_slide img{
+    scale: 1;
+    border: 5px solid #09318C;
+}
 .carousel_track-container{
     position: relative;
     height: 100%;
+    overflow: hidden;
 }
 .carousel_track{
     padding: 0;
     margin: 0;
     list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
 }
 .carousel_slide{
     position: absolute;
     top: 0;
     bottom: 0;
-
+    width: 40%;
+}
+.first_slide{
 }
 
 .carousel_button{
@@ -110,13 +126,15 @@ body{
     width: 12px;
 }
 .carousel_button_left{
-    left: -25px;
+    left: 25px;
+    z-index: 10;
 }
 .carousel_button_right{
-    right: -25px;
+    right: 25px;
 }
 
 .carousel_nav{
+    
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -144,13 +162,46 @@ body{
 
 
 /* Footer */
+footer{
+    font-size: .7rem;
+}
+.footer_contact_us{
+    margin-left: 20px;
+}
+.footer_welcom{
+    margin-left: 20px;
+    color: #C4912C ;
+}
 .footer_sections{
-    display: flex;
+    display: block;
+    
 }
 .footer_first_section{
+    display: inline-block;
+    width: 160px;
     margin-left: 20px;
 }
 .footer_contact_us{
+    color: #09318C;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer_welcom{
+    font-size: 1rem;
+}
+.footer_header{
+    color: #09318C;
+    font-size: .8rem;
+}
+.footer_mobile_phones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #C4912C;
+}
+
+.footer_email{
+    color: #C4912C ;
 
 }
 
@@ -161,5 +212,5 @@ body{
 }
 .footer_logo{
     width: 170px;
-    padding: 10px;
+    padding: 15px;
 }
