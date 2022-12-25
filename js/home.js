@@ -19,10 +19,10 @@ const moveToSlide = (currentSlide, targetSlide) => {
     const prevSlide = targetSlide.style.left;
     const amountToMove = parseFloat(prevSlide) - parseFloat(initial);
     console.log("initial: " + initial + ", prevSlide: " + prevSlide + ", amountToMove: " + amountToMove);
-    if(targetSlide.matches('.first_slide')){
+    if (targetSlide.matches('.first_slide')) {
         track.style.transform = 'translateX(0px)';
-    }else
-    track.style.transform = 'translateX(-' + amountToMove + 'px)';
+    } else
+        track.style.transform = 'translateX(-' + amountToMove + 'px)';
     currentSlide.classList.remove('current_slide');
     targetSlide.classList.add('current_slide');
     const indexTarget = slides.indexOf(targetSlide);
@@ -50,5 +50,10 @@ prevButton.addEventListener('click', e => {
     moveToSlide(currentSlide, targetSlide);
 });
 const currentSlide = track.querySelector('.current_slide');
-    const targetSlide = currentSlide.nextElementSibling;
-    moveToSlide(currentSlide, targetSlide);
+const targetSlide = currentSlide.nextElementSibling;
+moveToSlide(currentSlide, targetSlide);
+
+
+const carousel_imgs_width = track.querySelector('.carousel_image').width;
+console.log(carousel_imgs_width);
+document.querySelector('.youtube_video_img').width = carousel_imgs_width;
