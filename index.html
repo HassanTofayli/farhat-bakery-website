@@ -12,11 +12,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;500&display=swap" rel="stylesheet">
   <style>
-  *{
-    font-family: 'exo';
-    font-weight: 100;
-}
-</style>
+    * {
+      font-family: 'exo';
+      font-weight: 100;
+    }
+  </style>
 </head>
 
 <body>
@@ -60,65 +60,92 @@
     <img class="position-relative" style="margin-top:13vh" width="20%" src="images/welcome.svg" alt="">
     <p style="font-size: 1.5vw;" class="position-relative text-white">FARHAT has been manufactuing the ultimate and finest, 1973 Since<br>custome-built, commertial pita & flatbread machines in the world</p>
   </div> -->
-<section class="carousel">
-  <div class="carousel-container">
-    <button class="carousel_button carousel_button_left">
-      <img class="" src="images/testing/carousel/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg"
-        alt="">
-    </button>
-    <!-- //////////BODY///////// -->
-    <div class="carousel_track-container">
-      <ul class="carousel_track">
+  <section class="carousel">
+    <div class="carousel-container">
+      <a class="carousel_button carousel_button_left">
+      </a>
+      <!-- //////////BODY///////// -->
+      <div class="carousel_track-container">
+        <ul class="carousel_track">
 
-        <li class="first_slide current_slide carousel_slide">
-          <img class="carousel_image" src="images/testing/carousel/carousel_img_active.png" alt="">
-        </li>
+          <li class="first_slide current_slide carousel_slide">
+            <img class="carousel_image" src="images/testing/carousel/carousel_img_active.png" alt="">
+            <img class="carousel_img_shadow" src="images/testing/carousel/shadow.png" alt="">
+          </li>
 
-        <li class="carousel_slide">
-          <img class="carousel_image" src="images/testing/carousel/carousel_img_active.png" alt="">
-        </li>
+          <li class="carousel_slide">
+            <img class="carousel_image" src="images/testing/carousel/carousel_img_active.png" alt="">
+            <img class="carousel_img_shadow" src="images/testing/carousel/shadow.png" alt="">
 
-        <li class="carousel_slide">
-          <img class="carousel_image" src="images/testing/carousel/carousel_img_active.png" alt="">
-        </li>
+          </li>
 
-      </ul>
+          <li class="carousel_slide">
+            <img class="carousel_image" src="images/testing/carousel/carousel_img_active.png" alt="">
+            <img class="carousel_img_shadow" src="images/testing/carousel/shadow.png" alt="">
+          </li>
+
+        </ul>
+      </div>
+
+      <a class="carousel_button carousel_button_right">
+      </a>
+      <!-- //////////NAV///////// -->
+      <div class="carousel_nav">
+        <button class="carousel_indicator active_indicator">
+          <img class="carousel_nav_img indicator_active_img" src="images/testing/carousel/carousel_dot_active.png"
+            alt="">
+        </button>
+
+        <button class="carousel_indicator">
+          <img class="carousel_nav_img" src="images/testing/carousel/carousel_dot.png" alt="">
+        </button>
+
+        <button class="carousel_indicator">
+          <img class="carousel_nav_img" src="images/testing/carousel/carousel_dot.png" alt="">
+        </button>
+
+      </div>
     </div>
+  </section>
 
-    <button class="carousel_button carousel_button_right">
-      <img class="" src="images/testing/carousel/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg"
-        alt="">
-    </button>
-    <!-- //////////NAV///////// -->
-    <div class="carousel_nav">
-      <button class="carousel_indicator active_indicator">
-        <img class="carousel_nav_img indicator_active_img" src="images/testing/carousel/carousel_dot_active.png" alt="">
-      </button>
-      
-      <button class="carousel_indicator">
-        <img class="carousel_nav_img" src="images/testing/carousel/carousel_dot.png" alt="">
-      </button>
-
-      <button class="carousel_indicator">
-        <img class="carousel_nav_img" src="images/testing/carousel/carousel_dot.png" alt="">
-      </button>
-
-    </div>
+  <div class="youtube_around_text">
+    <p class="youtube_upper_text_title">Welcome to FARHAT BAKERY EQUPMENT</p>
+    <p class="youtube_upper_text">FARHAT has been msnufscturing the ultimate and finest. 1973 Since<br>
+      custom-built commercial pita & flatbread machines in the world</p>
   </div>
-</section>
-
-
-
-  <div class="" style="display: block;">
+  <div class="youtube_video">
     <a href="https://youtu.be/DTD9R-Qflcg" class="youtube_video_link">
       <img src="images/testing/youtube_video_img.png" alt="" class="youtube_video_img">
+      <img class="carousel_img_shadow" src="images/testing/carousel/shadow.png" alt="">
     </a>
   </div>
+  <div class="youtube_around_text">
+    <p>Our philosophy is Making Ultimate Bakery Machines</p>
+    <br>
+    A philosophy that pushes us to give birth to new concepts in bakery <br>
+    feild so these ideas would flourish and turn into new products that meet <br>
+    the baker fream and thus reshaping his bread manufacturing form a humble <br>
+    craft to a modern shape industry
+  </div>
 
+<!-- //////////NAV///////// -->
+<div class="carousel_nav carousel_nav_bottom">
+  <button class="carousel_indicator active_indicator">
+    <img class="carousel_nav_img" src="images/testing/carousel/carousel_dot.png"
+      alt="">
+  </button>
 
+  <button class="carousel_indicator">
+    <img class="carousel_nav_img indicator_active_img" src="images/testing/carousel/carousel_dot_active.png" alt="">
+  </button>
 
+  <button class="carousel_indicator">
+    <img class="carousel_nav_img" src="images/testing/carousel/carousel_dot.png" alt="">
+  </button>
 
-<script src="js/home.js"></script>
+</div>
+
+  <script src="js/home.js"></script>
 </body>
 
 
@@ -129,7 +156,7 @@
 
   <div class="footer_sections">
     <div class="footer_first_section">
-      
+
       <p class="footer_header">Mobile</p>
       <div class="footer_mobile_phones">
         <p class="footer_body">+961-70-527111</p>

@@ -9,13 +9,13 @@ console.log(slideWidth);
 const trackWidth = document.querySelector('.carousel_track-container').getBoundingClientRect().width;
 
 const setSlidePosition = (slide, index) => {
-    slide.style.left = trackWidth / 3.3 + index * slideWidth + 'px';
+    slide.style.left = trackWidth / 3.6 + index * slideWidth + 'px';
 
 }
 slides.forEach(setSlidePosition);
 
 const moveToSlide = (currentSlide, targetSlide) => {
-    const initial = trackWidth / 3.3;
+    const initial = trackWidth / 3.6;
     const prevSlide = targetSlide.style.left;
     const amountToMove = parseFloat(prevSlide) - parseFloat(initial);
     console.log("initial: " + initial + ", prevSlide: " + prevSlide + ", amountToMove: " + amountToMove);
@@ -57,3 +57,6 @@ moveToSlide(currentSlide, targetSlide);
 const carousel_imgs_width = track.querySelector('.carousel_image').width;
 console.log(carousel_imgs_width);
 document.querySelector('.youtube_video_img').width = carousel_imgs_width;
+document.querySelectorAll('.carousel_img_shadow').forEach(e => e.width = carousel_imgs_width);
+document.querySelectorAll('.carousel_img_shadow').scale = 0.5;
+document.querySelector('.current_slide .carousel_img_shadow').scale = 1;
