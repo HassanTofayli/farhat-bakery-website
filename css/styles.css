@@ -218,6 +218,15 @@ body {
     ;
 }
 
+/* ///////////////////// EMMBEDED YOUTUBE VIDEO //////////////// */
+.youtube_imbedded{
+    border-radius: 2.6vw;
+    border: 0.5vw solid #09318C;
+    position: relative;
+    margin: 0 0;
+    display: block;
+}
+
 
 
 

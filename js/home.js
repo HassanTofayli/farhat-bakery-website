@@ -55,8 +55,11 @@ moveToSlide(currentSlide, targetSlide);
 
 
 const carousel_imgs_width = track.querySelector('.carousel_image').width;
+const carousel_imgs_height = track.querySelector('.carousel_image').height;
 console.log(carousel_imgs_width);
 document.querySelector('.youtube_video_img').width = carousel_imgs_width;
+document.querySelector('.youtube_imbedded').width = carousel_imgs_width;
+document.querySelector('.youtube_imbedded').height = carousel_imgs_height;
 document.querySelectorAll('.carousel_img_shadow').forEach(e => e.width = carousel_imgs_width);
 document.querySelectorAll('.carousel_img_shadow').scale = 0.5;
 document.querySelector('.current_slide .carousel_img_shadow').scale = 1;
