@@ -1,0 +1,82 @@
+/* NAV MODIFICATIONS */
+/* MAKE NAV BAR NOT ABSOLUTE */
+.nav-link{
+    color: #C4912C!important;
+}
+
+
+
+/* //////////////////////////////DETAILS/////////////////////////////// */
+.content{
+    position: relative;
+}
+.name_container{
+    margin-left: 4vw;
+    margin-top: 2vw;
+}
+
+.details{
+    margin-left: 4vw;
+    display: inline-block;
+    width:min-content;
+}
+
+.machine_name{
+    color: #09318C;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.machine_details{
+    color: #09318C;
+    display: inline-block;
+    width: 20vw;
+    font-size: .7rem;
+}
+
+.star_icon{
+    filter: invert(45%) sepia(100%) saturate(308%) hue-rotate(2deg) brightness(107%) contrast(98%);
+    /* FOR BLUE => filter: invert(10%) sepia(93%) saturate(3295%) hue-rotate(221deg) brightness(103%) contrast(95%); */
+}
+.star_icon_active{
+    filter: invert(10%) sepia(93%) saturate(3295%) hue-rotate(221deg) brightness(103%) contrast(95%);
+}
+.rating{
+    color: #C4912C;
+}
+
+
+/* /////////////IMAGE////////////// */
+.image_container{
+    display:flex;
+    position: absolute;
+    top: 0;
+    left: 20vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.machine_img{
+    width: 60vw;
+    display: block;
+}
+
+.carousel_indicator {
+    border: 0;
+    background: transparent;
+}
+.carousel_nav_img {
+    width: 2vw;
+}
+.indicator_active_img {
+    width: 3vw;
+}
+.carousel_nav {
+
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.carousel_nav_bottom {
+    position: absolute;
+    bottom: 2vw;
+}
