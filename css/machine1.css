@@ -4,7 +4,7 @@
     color: #C4912C !important;
 }
 
-
+/* with abbas */
 @media screen and (max-width: 875px) {
     .image_container{
         display:flex;
