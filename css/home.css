@@ -133,13 +133,7 @@
 }
 
 .youtube_video_link {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    width: min-content;
+
 }
 
 .youtube_video_img {
@@ -148,10 +142,6 @@
     position: relative;
     margin: 0 0;
     display: block;
-}
-
-.youtube_img_shadow{
-    width: 100%;
 }
 
 .carousel_nav_bottom {
